@@ -45,5 +45,29 @@ module.exports = {
                 },
             },
         },
+        {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+                // Available options and their defaults:
+                base64Width: 20,
+                forceBase64Format: `png`, // valid formats: png,jpg,webp
+                useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+                stripMetadata: true,
+                defaultQuality: 50,
+                failOnError: true,
+            },
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `George Villaume Digital Resume`,
+                short_name: `George Villaume`,
+                start_url: `/`,
+                background_color: `#ffffff`,
+                theme_color: `#4aa7cf`,
+                display: `standalone`,
+                icon: `src/images/icon.png`,
+            },
+        },
     ],
 }
