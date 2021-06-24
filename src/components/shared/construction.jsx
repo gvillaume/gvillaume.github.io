@@ -17,8 +17,12 @@ const Construction = () => {
                     layout="fullWidth"
                 />
             </Box>
-            <Heading>This site is currently under construction</Heading>
-            <Text fontSize="xl">Come back soon to see the results!</Text>
+            <Heading align="center" fontSize={['lg', '2xl']}>
+                This site is currently under construction
+            </Heading>
+            <Text fontSize={['md', 'xl']} textAlign="center">
+                Come back soon to see the results!
+            </Text>
             <Flex w="124px" justify="space-between">
                 <motion.a
                     href="https://www.linkedin.com/in/george-villaume/"
