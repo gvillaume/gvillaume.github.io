@@ -4,6 +4,7 @@ module.exports = {
         siteUrl: 'https://gvillaume.github.io/',
     },
     plugins: [
+        '@chakra-ui/gatsby-plugin',
         {
             resolve: 'gatsby-source-contentful',
             options: {
