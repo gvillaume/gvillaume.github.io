@@ -1,14 +1,15 @@
 import React from 'react'
-import { Box, Flex, Heading, Image } from '@chakra-ui/react'
+import { Box, Flex, Image } from '@chakra-ui/react'
+
+import ProfileCard from '~components/home/profile-card'
 
 import Ribbons from '~images/background/ribbons.svg'
-import George from '~images/me/profile.png'
 
 const HomeView = () => {
     return (
         <Flex
             w="100vw"
-            h="95vh"
+            h="100vh"
             align="center"
             justify="center"
             position="relative"
@@ -22,18 +23,7 @@ const HomeView = () => {
                     objectPosition="center"
                 />
             </Box>
-            <Flex
-                flexDirection="column"
-                align="center"
-                shadow="xl"
-                style={{ backdropFilter: 'blur(36px)' }}
-                p={8}
-                borderRadius={20}
-                position="relative"
-            >
-                <Image src={George} boxSize="240px" />
-                <Heading color="white">George Villaume</Heading>
-            </Flex>
+            <ProfileCard />
         </Flex>
     )
 }

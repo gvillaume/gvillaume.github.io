@@ -20,6 +20,7 @@
         "@chakra-ui/react": "^1.6.4",
         "@emotion/react": "^11.4.0",
         "@emotion/styled": "^11.3.0",
+        "@fontsource/castoro": "^4.4.5",
         "@mdx-js/mdx": "^1.6.22",
         "@mdx-js/react": "^1.6.22",
         "framer-motion": "^4.1.17",
