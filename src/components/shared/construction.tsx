@@ -2,7 +2,6 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Flex, Box, Text, Heading } from '@chakra-ui/react'
 
-import PrimaryImage from '~components/shared/primary-image'
 import SocialLinks from '~components/shared/social-links'
 
 const Construction = () => {

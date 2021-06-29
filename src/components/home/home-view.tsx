@@ -9,10 +9,11 @@ const HomeView = () => {
     return (
         <Flex
             w="100vw"
-            h="100vh"
+            h="90vh"
             align="center"
             justify="center"
             position="relative"
+            boxShadow="2xl"
         >
             <Box position="absolute" top={0} width="100vw" height="100%">
                 <Image
