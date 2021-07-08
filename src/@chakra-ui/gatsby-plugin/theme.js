@@ -1,9 +1,13 @@
 import { extendTheme } from '@chakra-ui/react'
-import '@fontsource/castoro'
+import '@fontsource/crimson-text'
+import '@fontsource/poppins'
+import '@fontsource/inter'
+import '@fontsource/cabin'
 
 const theme = {
     fonts: {
-        heading: 'Castoro',
+        heading: 'Inter',
+        body: 'Inter',
     },
 }
 

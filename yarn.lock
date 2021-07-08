@@ -1763,10 +1763,30 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/castoro@^4.4.5":
+"@fontsource/cabin@^4.4.5":
   version "4.4.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/castoro/-/castoro-4.4.5.tgz#75a8455fdb098cd54c8dff6d2a73a8953d8da4a3"
-  integrity sha512-k+rpCynSm4hAfiUzjCSIsHdAZsz59VFry0r+o/3D0eQC9wgN2RiI5HXVJc4wOrtzEditHbfuzLs79lwkVLi8MQ==
+  resolved "https://registry.yarnpkg.com/@fontsource/cabin/-/cabin-4.4.5.tgz#d2f203aa3e0ec4a6d66c6cf43d5b743f08cdb70d"
+  integrity sha512-c7D74huEIJi5yhpayggqQ+Yc1i6XrR/nGlXqUbV0HHhndZoyqGbuviMlVZN/lMEo4bcMgzS/MTz4H8etqWsEMQ==
+
+"@fontsource/crimson-text@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/crimson-text/-/crimson-text-4.4.5.tgz#43912dea7f73c54d766826129c2fc69cdcf0d801"
+  integrity sha512-V/mICIP3nKLNOtzhW+gGu0hBPLmuHzfSO5wCFzk3OPOwlc7Krb670uL8XsfWkqnOT4+Z6DoFOzdrdICni+BIMg==
+
+"@fontsource/inter@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.4.5.tgz#bce26ff9dd83898bd610924cff1342cc30d0e89a"
+  integrity sha512-eRUmB54CbyC3MhAuw2VvTPEc3wy8sFi0/1mVHaC7ZXglXcrSWXY+p8Xad/Zy8AcmS9BuqCCEH2qJbOt9XdX65Q==
+
+"@fontsource/open-sans@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.4.5.tgz#07b31617e62ed753c94cabcf552ebaed4de497ce"
+  integrity sha512-PDWEvO1/p8OAHHiielvEmwGXHNbZhrZn96ojV7+/mKgFu+cCUcGVJl9sFs97rCWLe3hKQsYLEsJs4EiLjwa+UQ==
+
+"@fontsource/poppins@^4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.4.5.tgz#c75dcc453f7a9381de3f9b932366c2457887184c"
+  integrity sha512-pu675yvBGFhAHD8D7uj7C0NaHqDxD7mlgmLM8ziyYL4kYH79fil7rJ6U5X2oaKxoyRk3rxxb9k1fG0CCc7CquA==
 
 "@gatsbyjs/reach-router@^1.3.6":
   version "1.3.6"

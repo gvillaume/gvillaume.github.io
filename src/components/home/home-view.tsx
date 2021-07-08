@@ -1,31 +1,24 @@
 import React from 'react'
-import { Box, Flex, Image } from '@chakra-ui/react'
+import { Center, Image, Heading, VStack, HStack } from '@chakra-ui/react'
 
-import ProfileCard from '~components/home/profile-card'
-
-import Ribbons from '~images/background/ribbons.svg'
+import RotatingText from '~components/home/rotating-text'
+import George from '~images/me/profile.png'
 
 const HomeView = () => {
     return (
-        <Flex
-            w="100vw"
-            h="90vh"
-            align="center"
-            justify="center"
-            position="relative"
-            boxShadow="2xl"
-        >
-            <Box position="absolute" top={0} width="100vw" height="100%">
-                <Image
-                    src={Ribbons}
-                    width="100%"
-                    height="100%"
-                    objectFit="cover"
-                    objectPosition="center"
-                />
-            </Box>
-            <ProfileCard />
-        </Flex>
+        <Center w="100vw" h="80vh" position="relative">
+            <HStack spacing={32}>
+                <Image src={George} boxSize="280px" />
+                <VStack align="left">
+                    <Heading fontSize="42px">
+                        Hello! I'm George Villaume,
+                    </Heading>
+                    <Heading fontSize="42px">
+                        and I'm a <RotatingText />
+                    </Heading>
+                </VStack>
+            </HStack>
+        </Center>
     )
 }
 
