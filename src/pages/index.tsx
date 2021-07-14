@@ -1,18 +1,23 @@
 import React from 'react'
-import { Box } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 
+import Sidebar from '~components/shared/sidebar'
 import HomeView from '~components/home/home-view'
 import Footer from '~components/shared/footer'
 
+import Ribbons from '~images/background/ribbons.svg'
+
 const IndexPage = () => {
     return (
-        <Box
-            bgGradient="linear(to-t, #000, #121212 75%, #1d1d1d 100%)"
-            color="white"
-        >
-            <HomeView />
-            <Footer />
-        </Box>
+        <>
+            <Box bg="black" color="white">
+                <HomeView />
+
+                <Image src={Ribbons} w="100vw" h="auto" />
+                <Footer />
+            </Box>
+            <Sidebar />
+        </>
     )
 }
 

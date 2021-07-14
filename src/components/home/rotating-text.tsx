@@ -9,23 +9,23 @@ const RotatingText: React.FC = () => {
     const content = [
         {
             word: 'Co-Founder.',
-            color: 'linear(to-r, #ff220a, #ff7f17)',
+            color: 'linear(to-b, #ff220a, #ff7f17)',
         },
         {
             word: 'UI/UX Designer.',
-            color: 'linear(to-r, #00ff84, #e5ff00)',
+            color: 'linear(to-b, #00ff84, #e5ff00)',
         },
         {
             word: 'React Developer.',
-            color: 'linear(to-r, #0770fa, #07b1fa)',
+            color: 'linear(to-b, #0770fa, #07b1fa)',
         },
         {
             word: '3D Artist.',
-            color: 'linear(to-r, #ff6f08, #ffca0a)',
+            color: 'linear(to-b, #ff6f08, #ffca0a)',
         },
         {
             word: 'Musician.',
-            color: 'linear(to-r, #6506FF, #C14BFF)',
+            color: 'linear(to-b, #6506FF, #C14BFF)',
         },
     ]
 
@@ -35,7 +35,7 @@ const RotatingText: React.FC = () => {
                 current < content.length - 1
                     ? setCurrent(current + 1)
                     : setCurrent(0),
-            3000
+            2000
         )
     }, [current])
 
@@ -44,19 +44,33 @@ const RotatingText: React.FC = () => {
             {content.map((content, i) => (
                 <>
                     {current === i && (
-                        <RotateBox
-                            as="span"
-                            display="inline-block"
-                            w="13ch"
-                            bgGradient={content.color}
-                            bgClip="text"
-                            key={i}
-                            initial={{ y: -20, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: 20, opacity: 0 }}
-                        >
-                            {content.word}
-                        </RotateBox>
+                        <Box as="span" display="inline-block">
+                            {content.word.split('').map((letter, index) => (
+                                <RotateBox
+                                    key={index}
+                                    as="span"
+                                    display="inline-block"
+                                    bgGradient={content.color}
+                                    bgClip="text"
+                                    w={letter === ' ' ? '0.4ch' : 'auto'}
+                                    initial={{
+                                        y: -20,
+                                        opacity: 0,
+                                    }}
+                                    animate={{
+                                        y: 0,
+                                        opacity: 1,
+                                        transition: { delay: 0.025 * index },
+                                    }}
+                                    exit={{
+                                        y: 20,
+                                        opacity: 0,
+                                    }}
+                                >
+                                    {letter}
+                                </RotateBox>
+                            ))}
+                        </Box>
                     )}
                 </>
             ))}
