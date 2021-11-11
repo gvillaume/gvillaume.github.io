@@ -35,7 +35,7 @@ const RotatingText: React.FC = () => {
                 current < content.length - 1
                     ? setCurrent(current + 1)
                     : setCurrent(0),
-            2000
+            4000
         )
     }, [current])
 
